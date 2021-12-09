@@ -1,0 +1,166 @@
+:root {
+  --header-height: 70px;
+  --footer-height: 0;
+}
+
+* {
+  font-family: Dosis;
+  font-weight: 600;
+}
+
+b {
+  font-weight: 800;
+}
+
+html, body {
+  margin: 0;
+  background-color: #34568B;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #444;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: var(--header-height);
+  padding: 10px 0;
+}
+
+div.header-side {
+  flex-grow: 1;
+  height: calc(100% - 20px);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+div.header-middle {
+  flex-shrink: 0;
+  height: calc(100% - 20px);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#header-left {
+  display: flex;
+  align-items: flex-start;
+  /* Insert background image */
+  background-image: url("img/line-left.png");
+}
+
+#header-right {
+  /* Insert background image */
+  background-image: url("img/line-right.png");
+}
+
+div.header-help {
+  margin: auto 2%;
+}
+
+button.help-button {
+  border: none;
+  font-size: 25px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+button.help-button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.logo {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo > img {
+  height: 100%;
+}
+
+/* main */
+
+main {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  top: var(--header-height);
+  right: 0;
+  bottom: var(--footer-height);
+  left: 0;
+  padding: 15px 30px;
+  overflow-y: auto;
+}
+
+.box {
+  display: flex;
+}
+.box > .content {
+  border: 1px solid #C6C6C6;
+  border-radius: 15px;
+  padding: 5px 10px 8px 10px;
+  background-color: #C6C6C6;
+}
+.box > .content > p {
+  margin: 0;
+}
+
+.box.reminder {
+  margin: 0 auto;
+  padding: 0 7.5%
+}
+
+.box.reminder > .content {
+  margin: 0 auto;
+}
+
+.box.story {
+  margin-right: auto;
+  padding-right: 15%
+}
+
+.box.story > .content {
+  margin-right: auto;
+  border-color: white;
+  background-color: white;
+}
+
+.box.decision {
+  margin-left: auto;
+  padding-left: 15%;
+}
+
+.box.decision > .content {
+  margin-left: auto;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin-top: 5px;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--footer-height);
+}
