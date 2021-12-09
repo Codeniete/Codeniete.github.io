@@ -107,6 +107,8 @@ main {
 
 .box {
   display: flex;
+  padding: 10px;
+
 }
 .box > .content {
   border: 1px solid #C6C6C6;
@@ -120,7 +122,7 @@ main {
 
 .box.reminder {
   margin: 0 auto;
-  padding: 0 7.5%
+  padding: 10px;
 }
 
 .box.reminder > .content {
