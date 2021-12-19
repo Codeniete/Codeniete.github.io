@@ -151,6 +151,7 @@ h1 {
 .box.decision {
   margin-left: auto;
   padding-left: 15%;
+  padding-bottom: 20%;
 }
 
 .box.decision > .content {
