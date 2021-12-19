@@ -130,6 +130,7 @@ h1 {
 .box.reminder {
   margin: 0 auto;
   padding: 10px;
+  color: red;
 }
 
 .box.reminder > .content {
