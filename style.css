@@ -105,6 +105,13 @@ main {
   overflow-y: auto;
 }
 
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+
+}
+
 .box {
   display: flex;
   /*padding: 10px;*/
@@ -143,6 +150,7 @@ main {
 .box.decision {
   margin-left: auto;
   padding-left: 15%;
+  padding-bottom: 5%;
 }
 
 .box.decision > .content {
