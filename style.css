@@ -114,7 +114,7 @@ h1 {
 
 .box {
   display: flex;
-  /*padding: 10px;*/
+  padding: 10px;
 
 }
 .box > .content {
@@ -130,6 +130,7 @@ h1 {
 .box.reminder {
   margin: 0 auto;
   padding: 10px;
+  color: red;
 }
 
 .box.reminder > .content {
@@ -150,7 +151,11 @@ h1 {
 .box.decision {
   margin-left: auto;
   padding-left: 15%;
+<<<<<<< HEAD
   padding-bottom: 5%;
+=======
+  padding-bottom: 20%;
+>>>>>>> 0dd2360ec972bbebe566013c73cee1f942405af9
 }
 
 .box.decision > .content {
