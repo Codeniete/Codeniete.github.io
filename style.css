@@ -1,20 +1,26 @@
 :root {
   --header-height: 70px;
   --footer-height: 0;
+  --side-padding: 60px;
+  --background-color: #34568B;
 }
 
 * {
-  font-family: Dosis;
-  font-weight: 600;
+  font-family: Dosis, sans-serif;
 }
 
-b {
-  font-weight: 800;
+/* Anzeige Scrollbar */
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-html, body {
+body {
   margin: 0;
-  background-color: #34568B;
+  background-color: var(--background-color);
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -91,76 +97,106 @@ button.help-button:hover {
 
 /* main */
 
-main {
+#scroll-body {
+  top: 0;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
   top: var(--header-height);
   right: 0;
   bottom: var(--footer-height);
   left: 0;
-  padding: 15px 30px;
-  overflow-y: auto;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px - var(--header-height) - var(--footer-height));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+#story-layer {
+  /* versteckt story-layer: */
+  margin-top: 0%;
+  /* animation style transition */
+  transition: margin-top 1s;
+  transition-timing-function: ease-in-out;
 }
 
 h1 {
   font-size: 35px;
-  text-align: center;
+  text-align: left;
   color: white;
-
 }
 
 .box {
+  position: relative;
   display: flex;
-  /*padding: 10px;*/
+  opacity: 1;
+  padding-bottom: 10px;
+  /* animation style transition */
+  transition: opacity 1s;
+  transition-timing-function: ease-in-out;
+}
 
+.box.visible {
+  opacity: 1;
 }
 .box > .content {
-  border: 1px solid #C6C6C6;
   border-radius: 15px;
   padding: 5px 10px 8px 10px;
   background-color: #C6C6C6;
 }
-.box > .content > p {
-  margin: 0;
-}
 
 .box.reminder {
   margin: 0 auto;
-  padding: 10px;
+  padding-left: calc(var(--side-padding) / 2);
+  padding-right: calc(var(--side-padding) / 2);
 }
-
 .box.reminder > .content {
   margin: 0 auto;
+  font-weight: bold;
 }
 
-.box.story {
+.box.story, .box.message {
   margin-right: auto;
-  padding-right: 15%
+  padding-right: var(--side-padding);
 }
-
-.box.story > .content {
+.box.story > .content, .box.message > .content {
   margin-right: auto;
-  border-color: white;
   background-color: white;
+}
+.box.story > .content > p, .box.message > .content > p {
+  margin: 0;
+}
+.box.message > .content {
+  font-weight: bold;
+}
+.box.story > .content p+p {
+  text-indent: 10px;
 }
 
 .box.decision {
   margin-left: auto;
-  padding-left: 15%;
-  padding-bottom: 5%;
+  padding-left: var(--side-padding);
 }
-
 .box.decision > .content {
   margin-left: auto;
+  font-style: italic;
+}
+.box.decision > .content a {
+  font-style: normal;
+  font-weight: bold;
 }
 
 ul {
   margin: 0;
 }
-
 li {
   margin-top: 5px;
 }
