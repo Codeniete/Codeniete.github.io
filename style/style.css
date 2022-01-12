@@ -62,12 +62,12 @@ div.header-middle {
   display: flex;
   align-items: flex-start;
   /* Insert background image */
-  background-image: url("img/line-left.png");
+  background-image: url("../img/line-left.png");
 }
 
 #header-right {
   /* Insert background image */
-  background-image: url("img/line-right.png");
+  background-image: url("../img/line-right.png");
 }
 
 div.header-help {
@@ -121,8 +121,8 @@ button.help-button:hover {
 }
 
 #story-layer {
-  /* versteckt story-layer: */
-  margin-top: 0%;
+  /* story-layer verstecken */
+  margin-top: 0; /* TODO: Standard 100%, zum Anschauen 0 */
   /* animation style transition */
   transition: margin-top 1s;
   transition-timing-function: ease-in-out;
@@ -137,7 +137,7 @@ h1 {
 .box {
   position: relative;
   display: flex;
-  opacity: 1;
+  opacity: 1; /* TODO: Standard 0, zum Anschauen 1 */
   padding-bottom: 10px;
   /* animation style transition */
   transition: opacity 1s;
