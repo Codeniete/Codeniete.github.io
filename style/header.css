@@ -1,0 +1,63 @@
+/* header */
+
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--header-height);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+div.header-side {
+    flex-grow: 1;
+    height: calc(100% - 20px);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+div.header-middle {
+    flex-shrink: 0;
+    height: calc(100% - 20px);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#header-left {
+    display: flex;
+    align-items: flex-start;
+    /* Insert background image */
+    background-image: url("../img/line-left.png");
+}
+
+#header-right {
+    /* Insert background image */
+    background-image: url("../img/line-right.png");
+}
+
+div.header-help {
+    margin: auto 2%;
+}
+
+button.help-button {
+    border: none;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+button.help-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.logo {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo > img {
+    height: 100%;
+}

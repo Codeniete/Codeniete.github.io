@@ -15,7 +15,8 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
@@ -27,6 +28,7 @@
 </header>
 
 <main id="scroll-body">
+    <div class="container" id="reference-layer"></div>
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Last Lay-up </h1>
@@ -125,12 +127,26 @@
       </div>
     </div>
     -->
+    <!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+    <div class="dialog-main">
+        <div class="dialog-inner">
+            <div class="close-button">x</div>
+            <div class="dialog-wrapper">
+                <div class="dialog-content">
+                    <h2>Titel</h2>
+                    <p>Text</p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </div>
 </main>
 
 
 <footer></footer>
 
-<script src="script/script.js" charset="utf-8"></script>
+<script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
 
 </body>
 </html>
