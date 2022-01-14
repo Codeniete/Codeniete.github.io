@@ -15,51 +15,60 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Ein Zeichen </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Am nächsten Morgen gehst du zur Schule um deine Mathearbeit nachzuschreiben. Gestern hattest du noch
-                    Zeit, dich darauf vorzubereiten. </p>
+                Am nächsten Morgen gehst du zur Schule um deine Mathearbeit nachzuschreiben. Gestern hattest du noch
+                Zeit, dich darauf vorzubereiten.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Nach der Klausur hast du ein gutes Gefühl, es war gar nicht so schwer wie du dachtest. Auf dem Weg
-                    ins Klassenzimmer hältst du Ausschau nach deinem Freund. Jay ist nirgends zu sehen. Du setzt dich
-                    auf deinen Platz, gleich beginnt der Deutschunterricht.</p>
+                Nach der Klausur hast du ein gutes Gefühl, es war gar nicht so schwer wie du dachtest. Auf dem Weg ins
+                Klassenzimmer hältst du Ausschau nach deinem Freund. Jay ist nirgends zu sehen. Du setzt dich auf deinen
+                Platz, gleich beginnt der Deutschunterricht.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Dein Deutschlehrer betritt das Klassenzimmer. Er sieht nicht erfreut aus...
-                </p>
-                <p>„Ruhe und setzen!“, sagt er. „Gestern Abend haben fünf unserer Schüler Vandalismus begangen! Sie
-                    wurden von der Polizei beim Sprayen von Graffiti auf Züge erwischt. Um auf das Thema „Umwelt“
-                    aufmerksam zu machen, heißt es. Ich möchte mit euch die heutige Stunde diesem Thema widmen. Warum
-                    ist es illegal, obwohl es vermeintlich einem guten Zweck dient? Was sind die Folgen? Ihr werdet alle
-                    drei Seiten Fließtext zu diesem Thema abgeben, welches Teil eurer Endnote wird. So kann ich sicher
-                    sein, dass, wenn jemand von euch jegliche Aktivität unterstützt, er oder sie sich der Konsequenzen
-                    und der Verantwortung bewusst ist. Also, legen wir los... !“</p>
+                Dein Deutschlehrer betritt das Klassenzimmer. Er sieht nicht erfreut aus...
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Wenn das mal nicht ein Zeichen ist...</p>
+                „Ruhe und setzen!“, sagt er. „Gestern Abend haben fünf unserer Schüler Vandalismus begangen! Sie wurden
+                von der Polizei beim Sprayen von Graffiti auf Züge erwischt. Um auf das Thema „Umwelt“ aufmerksam zu
+                machen, heißt es. Ich möchte mit euch die heutige Stunde diesem Thema widmen. Warum ist es illegal,
+                obwohl es vermeintlich einem guten Zweck dient? Was sind die Folgen? Ihr werdet alle drei Seiten
+                Fließtext zu diesem Thema abgeben, welches Teil eurer Endnote wird. So kann ich sicher sein, dass, wenn
+                jemand von euch jegliche Aktivität unterstützt, er oder sie sich der Konsequenzen und der Verantwortung
+                bewusst ist. Also, legen wir los... !“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Wenn das mal nicht ein Zeichen ist...
             </div>
         </div>
         <div class="box title">
@@ -69,7 +78,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

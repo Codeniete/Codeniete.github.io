@@ -15,32 +15,44 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Bequem </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Da du eh schon viel zu spät dran und unglaublich müde bist, legst du das Handy weg und holst den
-                    restlichen Schlaf nach.
-                </p>
-                <p>Danach bist du voller Energie und nach einer kalten Dusche fühlst du dich auch wieder frisch. Du
-                    setzt dich an den Schreibtisch und lernst für die Matheklausur. Für heute reichst du eine
-                    Krankenmeldung ein und kannst die Klausur bei der nächsten Stunde nachschreiben.
-                </p>
-                <p>Drei Stunden sind vergangen, als du das erste Mal auf dein Handy schaust. Es ist Jay.</p>
+                Da du eh schon viel zu spät dran und unglaublich müde bist, legst du das Handy weg und holst den
+                restlichen Schlaf nach.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Danach bist du voller Energie und nach einer kalten Dusche fühlst du dich auch wieder frisch. Du setzt
+                dich an den Schreibtisch und lernst für die Matheklausur. Für heute reichst du eine Krankenmeldung ein
+                und kannst die Klausur bei der nächsten Stunde nachschreiben.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Drei Stunden sind vergangen, als du das erste Mal auf dein Handy schaust. Es ist Jay.
             </div>
         </div>
         <div class="box message">
@@ -54,10 +66,10 @@
         </div>
         <div class="box story">
             <div class="content">
-                <p>Obwohl du heute schon wegen der gestrigen Aktion die Schule geschwänzt hast, willst du mit. Doch
-                    lohnt es sich, für das illegale Sprayen so viel aufs Spiel zu setzen? Nur weil es illegal ist, ist
-                    es nicht gleich schlecht. Ihr tut es schließlich zu einem Zweck und wollt damit etwas erreichen –
-                    das Thema Umwelt ins Bewusstsein der Gesellschaft rücken.</p>
+                Obwohl du heute schon wegen der gestrigen Aktion die Schule geschwänzt hast, willst du mit. Doch lohnt
+                es sich, für das illegale Sprayen so viel aufs Spiel zu setzen? Nur weil es illegal ist, ist es nicht
+                gleich schlecht. Ihr tut es schließlich zu einem Zweck und wollt damit etwas erreichen – das Thema
+                Umwelt ins Bewusstsein der Gesellschaft rücken.
             </div>
         </div>
         <div class="box decision">
@@ -78,7 +90,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

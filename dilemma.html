@@ -15,47 +15,70 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Dilemma </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Du packst deine Sachen und willst dich auf den Weg machen, als deine Mutter sich dir in den Weg
-                    stellt.
-                </p>
-                <p>„Wohin gehst du?!“
-                </p>
-                <p>„Zu Jay, wir wollen einen Filmeabend machen.“
-                </p>
-                <p>„Aaaaah, Filmeabend nennt ihr das. Na ja, von mir aus. Sieh zu, dass, wenn du nach Hause kommst, du
-                    mir ’ne Flasche Dornfelder mitbringst. Und bau keinen Sche**, dass mir bloß nicht das Jugendamt
-                    wieder hier auftaucht und sich einmischt!“
-                </p>
-                <p>„Ja Mama, mache ich.“</p>
+                Du packst deine Sachen und willst dich auf den Weg machen, als deine Mutter sich dir in den Weg stellt.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Kein Wunder, dass du lieber abhaust, als für die Arbeit zu lernen, wo du es mit deiner Mutter unter
-                    einem Dach eh kaum aushältst. Wenigstens passiert heute etwas Aufregendes.
-                </p>
-                <p>Kurz bevor du dich auf den Weg zum Bahnhof machen willst, schickt Jay dir eine Sprachnachricht, die
-                    du dir sofort anhörst.
-                </p>
-                <p>Er sagt:</p>
+                „Wohin gehst du?!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Zu Jay, wir wollen einen Filmeabend machen.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Aaaaah, Filmeabend nennt ihr das. Na ja, von mir aus. Sieh zu, dass, wenn du nach Hause kommst, du mir
+                ’ne Flasche Dornfelder mitbringst. Und bau keinen Sche**, dass mir bloß nicht das Jugendamt wieder hier
+                auftaucht und sich einmischt!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Ja Mama, mache ich.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Kein Wunder, dass du lieber abhaust, als für die Arbeit zu lernen, wo du es mit deiner Mutter unter
+                einem Dach eh kaum aushältst. Wenigstens passiert heute etwas Aufregendes.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Kurz bevor du dich auf den Weg zum Bahnhof machen willst, schickt Jay dir eine Sprachnachricht, die du
+                dir sofort anhörst.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Er sagt:
             </div>
         </div>
         <div class="box message">
@@ -67,18 +90,27 @@
         </div>
         <div class="box story">
             <div class="content">
-                <p>Jay meint damit einen Radweg, der ab der Nordseite des Bahnhofs parallel zu den Gleisen verläuft. Auf
-                    ein paar hundert Meter befindet sich dazwischen eine unüberwindbare Lärmschutzwand, doch dann
-                    gelangt man zu einer Brücke. Eine schmale Treppe an der Seite führt direkt auf die Gleise, denen man
-                    dann zurück in Richtung Bahnhof folgen muss.
-                </p>
-                <p>Es ist ein Riesen-Umweg, noch dazu verlassen, unheimlich und ohne Beleuchtung.
-                </p>
-                <p>Der bloße Gedanke daran, jetzt – mitten in der Nacht – allein dort entlang zu laufen, bereitet dir
-                    Bauchschmerzen.
-                </p>
-                <p>Obendrein bemerkst du, dass du vergessen hast, dein Smartphone zu laden und den Akku schonen musst.
-                    Eine Taschenlampe hast du nicht zur Hand.</p>
+                Jay meint damit einen Radweg, der ab der Nordseite des Bahnhofs parallel zu den Gleisen verläuft. Auf
+                ein paar hundert Meter befindet sich dazwischen eine unüberwindbare Lärmschutzwand, doch dann gelangt
+                man zu einer Brücke. Eine schmale Treppe an der Seite führt direkt auf die Gleise, denen man dann zurück
+                in Richtung Bahnhof folgen muss.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Es ist ein Riesen-Umweg, noch dazu verlassen, unheimlich und ohne Beleuchtung.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Der bloße Gedanke daran, jetzt – mitten in der Nacht – allein dort entlang zu laufen, bereitet dir
+                Bauchschmerzen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Obendrein bemerkst du, dass du vergessen hast, dein Smartphone zu laden und den Akku schonen musst. Eine
+                Taschenlampe hast du nicht zur Hand.
             </div>
         </div>
         <div class="box decision">
@@ -98,7 +130,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

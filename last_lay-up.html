@@ -15,26 +15,32 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Last Lay-up </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Es ist 19:25 Uhr. Du bist zu Hause auf deinem Zimmer, als dich eine Nachricht auf dem Smartphone
-                    erreicht. Es ist dein Kumpel Jay. Er schreibt:</p>
+                Es ist 19:25 Uhr. Du bist zu Hause auf deinem Zimmer, als dich eine Nachricht auf dem Smartphone
+                erreicht. Es ist dein Kumpel Jay. Er schreibt:
             </div>
         </div>
         <div class="box message">
@@ -50,19 +56,27 @@
         </div>
         <div class="box story">
             <div class="content">
-                <p>Du weißt, dass er die Graffiti-Aktion meint, zu der ihr euch verabredet habt. „Last Lay-up“ ist der
-                    vereinbarte Code für das hinterste Abstellgleis am Hauptbahnhof.
-                </p>
-                <p>Jay ist leidenschaftlicher Klima-Aktivist und sprayt unter dem Tag „Risk“ provokative Sprüche und
-                    Bilder auf stehende Züge. Du bewunderst seine Arbeit total und darfst heute Nacht zum ersten Mal
-                    dabei sein.
-                </p>
-                <p>Sofort überkommt dich eine innere Aufregung, als du Jays Message liest – nicht nur, weil du dich
-                    schon die ganze Woche auf die Aktion mit ihm freust, sondern weil du genau weißt, dass das, was ihr
-                    vorhabt, illegal ist. Aber Jay meint es wirklich ernst damit. Er verlässt sich auf dich.
-                </p>
-                <p>Gerade noch hast du deine Aufmerksamkeit auf dem Display, da poppt unter einem unverhofften „BING!“
-                    dein Reminder auf:</p>
+                Du weißt, dass er die Graffiti-Aktion meint, zu der ihr euch verabredet habt. „Last Lay-up“ ist der
+                vereinbarte Code für das hinterste Abstellgleis am Hauptbahnhof.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Jay ist leidenschaftlicher Klima-Aktivist und sprayt unter dem Tag „Risk“ provokative Sprüche und Bilder
+                auf stehende Züge. Du bewunderst seine Arbeit total und darfst heute Nacht zum ersten Mal dabei sein.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Sofort überkommt dich eine innere Aufregung, als du Jays Message liest – nicht nur, weil du dich schon
+                die ganze Woche auf die Aktion mit ihm freust, sondern weil du genau weißt, dass das, was ihr vorhabt,
+                illegal ist. Aber Jay meint es wirklich ernst damit. Er verlässt sich auf dich.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Gerade noch hast du deine Aufmerksamkeit auf dem Display, da poppt unter einem unverhofften „BING!“ dein
+                Reminder auf:
             </div>
         </div>
         <div class="box reminder">
@@ -88,7 +102,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

@@ -15,61 +15,97 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Willkommen im Team! </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Nach 45 Minuten habt ihr euer Werk vollendet.
-                </p>
-                <p>Luca tritt vor deinem Piece zurück und nickt anerkennend. „Nice Work! Ich würde sagen, deine
-                    Aufnahmeprüfung hast du nach der Aktion safe bestanden, oder was meint ihr?“
-                </p>
-                <p>Alle anderen stimmen Luca zu und du bist stolz, offiziell ein Teil ihrer Crew zu sein.</p>
+                Nach 45 Minuten habt ihr euer Werk vollendet.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Plötzlich zischt Jay: „Shit, da ist jemand!“
-                </p>
-                <p>Alle schauen zu dem Licht, das am anderen Ende des ICEs erscheint. Alle packen ihre Sachen schnell
-                    ein und rennen. Dein Herz rast und du bekommst Panik. Du schmeißt alles in deinen Rucksack und
-                    rennst den Anderen hinterher. Und als wäre die Situation nicht schon schlimm genug, fällt dir dein
-                    Haustürschlüssel aus der Jackentasche.
-                </p>
-                <p>Jay bemerkt, dass du langsamer wirst und ruft: „Los, komm schon!“
-                </p>
-                <p>Scheiß drauf, denkst du dir und rennst weiter.
-                </p>
-                <p>Plötzlich kommt eine Gestalt von der Seite, rammt dich und ihr fallt gemeinsam zu Boden. Ein starker
-                    Arm hält dich vom Aufstehen ab.
-                </p>
-                <p>„So, mein Freundchen, jetzt haben wir dich“, sagt eine rigorose Stimme über dir.
-                </p>
-                <p>Du siehst nur, wie die anderen weglaufen und du allein zurückbleibst.
-                </p>
-                <p>„Leute!“, schreist du ihnen hinterher.
-                </p>
-                <p>„Du denkst, dass sie dich retten, was?“, spricht der Mann zynisch, steht auf und reißt dich mit hoch.
-                    „Da kennst du diese Typen aber schlecht!“</p>
+                Luca tritt vor deinem Piece zurück und nickt anerkennend. „Nice Work! Ich würde sagen, deine
+                Aufnahmeprüfung hast du nach der Aktion safe bestanden, oder was meint ihr?“
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Shit, das eskalierte schnell...</p>
+                Alle anderen stimmen Luca zu und du bist stolz, offiziell ein Teil ihrer Crew zu sein.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Plötzlich zischt Jay: „Shit, da ist jemand!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Alle schauen zu dem Licht, das am anderen Ende des ICEs erscheint. Alle packen ihre Sachen schnell ein
+                und rennen. Dein Herz rast und du bekommst Panik. Du schmeißt alles in deinen Rucksack und rennst den
+                Anderen hinterher. Und als wäre die Situation nicht schon schlimm genug, fällt dir dein Haustürschlüssel
+                aus der Jackentasche.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Jay bemerkt, dass du langsamer wirst und ruft: „Los, komm schon!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Scheiß drauf, denkst du dir und rennst weiter.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Plötzlich kommt eine Gestalt von der Seite, rammt dich und ihr fallt gemeinsam zu Boden. Ein starker Arm
+                hält dich vom Aufstehen ab.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „So, mein Freundchen, jetzt haben wir dich“, sagt eine rigorose Stimme über dir.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du siehst nur, wie die anderen weglaufen und du allein zurückbleibst.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Leute!“, schreist du ihnen hinterher.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Du denkst, dass sie dich retten, was?“, spricht der Mann zynisch, steht auf und reißt dich mit hoch.
+                „Da kennst du diese Typen aber schlecht!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Shit, das eskalierte schnell...
             </div>
         </div>
         <div class="box decision">
@@ -81,7 +117,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

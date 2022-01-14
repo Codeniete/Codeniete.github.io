@@ -15,37 +15,43 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Zu riskant </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>„Danke“, sagst du, „aber ich lehne trotz allem ab. Das ist alles zu riskant für mich und meine Mutter
-                    braucht mich jetzt, da kann ich mir nicht einen Tag frei nehmen. Danke für das Angebot und die
-                    Chance, ein Teil eures Teams zu sein, doch ich muss mich gerade auf andere Dinge konzentrieren.
-                    Richte Jay aus, dass es mir Leid tut.“</p>
+                „Danke“, sagst du, „aber ich lehne trotz allem ab. Das ist alles zu riskant für mich und meine Mutter
+                braucht mich jetzt, da kann ich mir nicht einen Tag frei nehmen. Danke für das Angebot und die Chance,
+                ein Teil eures Teams zu sein, doch ich muss mich gerade auf andere Dinge konzentrieren. Richte Jay aus,
+                dass es mir Leid tut.“
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Mit den Worten machst du dich davon, du wartest gar nicht auf eine Antwort, denn du bist dir deiner
-                    Entscheidung sicher und willst nicht wieder manipuliert werden. Die Mathearbeit von heute hast du
-                    verpasst, kannst sie aber zum Glück nachschreiben. Das Sprayen ist zwar zu einem guten Zweck,
-                    trotzdem ist es illegal. Wenn du erwischt wirst, zahlst du eine Strafe bis zu deinem 46. Lebensjahr
-                    ab... die Risiken sollten gut überlegt sein.</p>
+                Mit den Worten machst du dich davon, du wartest gar nicht auf eine Antwort, denn du bist dir deiner
+                Entscheidung sicher und willst nicht wieder manipuliert werden. Die Mathearbeit von heute hast du
+                verpasst, kannst sie aber zum Glück nachschreiben. Das Sprayen ist zwar zu einem guten Zweck, trotzdem
+                ist es illegal. Wenn du erwischt wirst, zahlst du eine Strafe bis zu deinem 46. Lebensjahr ab... die
+                Risiken sollten gut überlegt sein.
             </div>
         </div>
         <div class="box decision">
@@ -57,7 +63,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

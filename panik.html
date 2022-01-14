@@ -15,48 +15,71 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Panik </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Von Kopf bis Fuß in schwarz gekleidet läufst du auf dem Bahngleis durch die Dunkelheit. Immerhin
-                    scheint der Mond heute Nacht hell genug, dass du den Weg auf einige Meter erkennen kannst und nicht
-                    stolperst.
-                </p>
-                <p>Du fühlst dich extrem unwohl, so ganz auf dich allein gestellt, und wünschst dir gerade nichts
-                    sehnlicher, als Jay endlich zu finden.
-                </p>
-                <p>Irgendwann, noch lange bevor die Lichter des Bahnhofs wieder in Sicht sind, erscheint in einiger
-                    Entfernung vor dir ein kleiner, hell leuchtender Punkt. Ein Zug, denkst du und bereitest dich darauf
-                    vor, ausweichen zu müssen. Doch allmählich stellst du fest, dass es gar kein Zug sein kann. Das
-                    Licht kommt eindeutig näher – nur viel zu langsam. Dazu erkennst du bald darauf eine leicht
-                    schwankende Bewegung des leuchtenden Objekts.
-                </p>
-                <p>Du bist nicht allein! Da läuft noch jemand auf dem Gleis. Bleibt nur die Frage: Ist es Jay? Oder ein
-                    Fremder? Sollst du weitergehen oder die Flucht ergreifen?
-                </p>
-                <p>Du entscheidest dich, auf die Person zuzugehen. Schließlich stehst du wenige Meter vor ihr. Das Licht
-                    kommt von einer Taschenlampe. Es blendet dich so sehr, dass du dahinter nicht einmal eine Silhouette
-                    erkennst. Dein Gegenüber spricht kein Wort. Die Situation ist alarmierend. Jay hätte dich längst
-                    erkannt und begrüßt.
-                </p>
-                <p>Dein Herz rast. Auf der Stelle drehst du dich um und rennst. Du rennst so schnell wie nie zuvor.
-                </p>
-                <p>Eine dir unbekannte Männerstimme brüllt dir nach: „Hey! Komm zurück!“</p>
+                Von Kopf bis Fuß in schwarz gekleidet läufst du auf dem Bahngleis durch die Dunkelheit. Immerhin scheint
+                der Mond heute Nacht hell genug, dass du den Weg auf einige Meter erkennen kannst und nicht stolperst.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du fühlst dich extrem unwohl, so ganz auf dich allein gestellt, und wünschst dir gerade nichts
+                sehnlicher, als Jay endlich zu finden.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Irgendwann, noch lange bevor die Lichter des Bahnhofs wieder in Sicht sind, erscheint in einiger
+                Entfernung vor dir ein kleiner, hell leuchtender Punkt. Ein Zug, denkst du und bereitest dich darauf
+                vor, ausweichen zu müssen. Doch allmählich stellst du fest, dass es gar kein Zug sein kann. Das Licht
+                kommt eindeutig näher – nur viel zu langsam. Dazu erkennst du bald darauf eine leicht schwankende
+                Bewegung des leuchtenden Objekts.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du bist nicht allein! Da läuft noch jemand auf dem Gleis. Bleibt nur die Frage: Ist es Jay? Oder ein
+                Fremder? Sollst du weitergehen oder die Flucht ergreifen?
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du entscheidest dich, auf die Person zuzugehen. Schließlich stehst du wenige Meter vor ihr. Das Licht
+                kommt von einer Taschenlampe. Es blendet dich so sehr, dass du dahinter nicht einmal eine Silhouette
+                erkennst. Dein Gegenüber spricht kein Wort. Die Situation ist alarmierend. Jay hätte dich längst erkannt
+                und begrüßt.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Dein Herz rast. Auf der Stelle drehst du dich um und rennst. Du rennst so schnell wie nie zuvor.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Eine dir unbekannte Männerstimme brüllt dir nach: „Hey! Komm zurück!“
             </div>
         </div>
         <div class="box decision">
@@ -76,7 +99,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

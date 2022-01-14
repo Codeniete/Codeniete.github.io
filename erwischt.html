@@ -15,68 +15,104 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Erwischt </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Du sitzt auf der Polizeistation, alleine in einem Raum. Du machst dir Vorwürfe.
-                </p>
-                <p>Was zur Hölle habe ich mir nur dabei gedacht?, sagst du in Gedanken zu dir selbst. Warum höre ich
-                    nicht auf mein Bauchgefühl und bleibe einfach zu Hause, um für die Schule zu lernen?!
-                </p>
-                <p>Deine Mutter wurde schon kontaktiert. Sie war nicht sonderlich erfreut. (Nicht dass sie es jemals
-                    über irgendwas, das du gemacht hast, gewesen wäre.) Jetzt ist sie auf dem Weg, dich vom
-                    Polizeirevier abzuholen. Hoffentlich nicht mit dem Auto...
-                </p>
-                <p>Eine Polizeibeamtin betritt den Raum und setzt sich dir gegenüber.</p>
+                Du sitzt auf der Polizeistation, alleine in einem Raum. Du machst dir Vorwürfe.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Sie sagt: „Sie wurden auf frischer Tat ertappt, Vandalismus auf einen brandneuen ICE Zug zu begehen.
-                    Möchten Sie mir erzählen, wer noch bei Ihnen war? Oder wollen Sie für sie die gesamte Schuld auf
-                    sich nehmen?“
-                </p>
-                <p>Du starrst stumm auf deine gefalteten Hände.
-                </p>
-                <p>Die Polizistin fährt fort: „Ich weiß, dass Sie neu in der Bande sind, denn ihren Freund „Risk“
-                    verfolgen wir schon lange. Ich wäre bereit, Ihnen einen fairen Deal anzubieten, wenn sie mir seinen
-                    richtigen Namen verraten und Beweise liefern, dass er der Kopf der Bande ist.“
-                </p>
-                <p>In dem Moment öffnet sich die Tür und deine Mutter erscheint. Sie wettert gleich drauf los: „Du
-                    Nichtsnutz sprayst Graffiti auf Züge?! Was zur Hölle fällt dir ein!!!“
-                </p>
-                <p>„Beruhigen Sie sich“, versucht die Polizistin, deine Mutter zu beschwichtigen. „Ich bin Officer
-                    Stein. Setzen Sie sich doch bitte.“
-                </p>
-                <p>„Einen Sch*** werde ich tun...“, schreit deine Mutter und du zuckst vor Fremdscham zusammen.
-                </p>
-                <p>Sie nuschelt und ist wieder mal stark alkoholisiert. Officer Stein entgeht dies natürlich nicht.
-                </p>
-                <p>Als sie deine Mutter darauf anspricht, ob sie getrunken habe, verliert diese die Beherrschung und
-                    landet einen Raum weiter in der Ausnüchterungszelle.</p>
+                Was zur Hölle habe ich mir nur dabei gedacht?, sagst du in Gedanken zu dir selbst. Warum höre ich nicht
+                auf mein Bauchgefühl und bleibe einfach zu Hause, um für die Schule zu lernen?!
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Als die Polizistin wiederkommt, wirft sie dir einen fast mitleidigen Blick zu und seufzt: „Es tut mir
-                    wirklich Leid. Ich sehe doch, in welcher Zwickmühle du dich befindest. Wenn du mir hilfst, werde ich
-                    die Klage gegen dich fallen lassen und du und deine Mutter dürft gehen. Du musst nur ein paar
-                    Sozialstunden ableisten.“</p>
+                Deine Mutter wurde schon kontaktiert. Sie war nicht sonderlich erfreut. (Nicht dass sie es jemals über
+                irgendwas, das du gemacht hast, gewesen wäre.) Jetzt ist sie auf dem Weg, dich vom Polizeirevier
+                abzuholen. Hoffentlich nicht mit dem Auto...
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Eine Polizeibeamtin betritt den Raum und setzt sich dir gegenüber.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Sie sagt: „Sie wurden auf frischer Tat ertappt, Vandalismus auf einen brandneuen ICE Zug zu begehen.
+                Möchten Sie mir erzählen, wer noch bei Ihnen war? Oder wollen Sie für sie die gesamte Schuld auf sich
+                nehmen?“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du starrst stumm auf deine gefalteten Hände.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Die Polizistin fährt fort: „Ich weiß, dass Sie neu in der Bande sind, denn ihren Freund „Risk“ verfolgen
+                wir schon lange. Ich wäre bereit, Ihnen einen fairen Deal anzubieten, wenn sie mir seinen richtigen
+                Namen verraten und Beweise liefern, dass er der Kopf der Bande ist.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                In dem Moment öffnet sich die Tür und deine Mutter erscheint. Sie wettert gleich drauf los: „Du
+                Nichtsnutz sprayst Graffiti auf Züge?! Was zur Hölle fällt dir ein!!!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Beruhigen Sie sich“, versucht die Polizistin, deine Mutter zu beschwichtigen. „Ich bin Officer Stein.
+                Setzen Sie sich doch bitte.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Einen Sch*** werde ich tun...“, schreit deine Mutter und du zuckst vor Fremdscham zusammen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Sie nuschelt und ist wieder mal stark alkoholisiert. Officer Stein entgeht dies natürlich nicht.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Als sie deine Mutter darauf anspricht, ob sie getrunken habe, verliert diese die Beherrschung und landet
+                einen Raum weiter in der Ausnüchterungszelle.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Als die Polizistin wiederkommt, wirft sie dir einen fast mitleidigen Blick zu und seufzt: „Es tut mir
+                wirklich Leid. Ich sehe doch, in welcher Zwickmühle du dich befindest. Wenn du mir hilfst, werde ich die
+                Klage gegen dich fallen lassen und du und deine Mutter dürft gehen. Du musst nur ein paar Sozialstunden
+                ableisten.“
             </div>
         </div>
         <div class="box decision">
@@ -97,7 +133,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

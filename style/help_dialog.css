@@ -29,6 +29,7 @@
     vertical-align: middle;
     margin: auto;
     z-index: 900;
+    max-width: 90%;
 }
 
 .dialog-wrapper {

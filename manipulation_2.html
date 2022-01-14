@@ -15,38 +15,56 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Manipulation </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>„Ich hatte eigentlich mehr von dir erwartet“, sagt Jay.
-                </p>
-                <p>„Du weißt doch, dass du auf mich zählen kannst. Wenn es drauf ankommt!“, verteidigst du dich.
-                </p>
-                <p>Da kommt Jay dir entgegen: „Hey, ich versteh das total, dass dir bei der Sache unwohl is’. Aber die
-                    Aufnahmeprüfung is’ eben Tradition bei uns. Wir haben das alle durch. Und es wäre einfach unfair den
-                    anderen gegenüber, bei dir ’ne Ausnahme zu machen.“
-                </p>
-                <p>Du pustest eingeschnappt. Aber dann bemerkst du die Gesichter von Flo und Basti und siehst ihnen an,
-                    dass sie derselben Meinung sind wie Jay. Willst du dich vom ersten Tag an bei ihnen unbeliebt
-                    machen? Natürlich nicht.
-                </p>
-                <p>Eher als dass du noch einmal gründlich darüber nachdenkst, rutscht es dir raus: „Na gut, na gut, ich
-                    mach’s.“</p>
+                „Ich hatte eigentlich mehr von dir erwartet“, sagt Jay.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Du weißt doch, dass du auf mich zählen kannst. Wenn es drauf ankommt!“, verteidigst du dich.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Da kommt Jay dir entgegen: „Hey, ich versteh das total, dass dir bei der Sache unwohl is’. Aber die
+                Aufnahmeprüfung is’ eben Tradition bei uns. Wir haben das alle durch. Und es wäre einfach unfair den
+                anderen gegenüber, bei dir ’ne Ausnahme zu machen.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du pustest eingeschnappt. Aber dann bemerkst du die Gesichter von Flo und Basti und siehst ihnen an,
+                dass sie derselben Meinung sind wie Jay. Willst du dich vom ersten Tag an bei ihnen unbeliebt machen?
+                Natürlich nicht.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Eher als dass du noch einmal gründlich darüber nachdenkst, rutscht es dir raus: „Na gut, na gut, ich
+                mach’s.“
             </div>
         </div>
         <div class="box decision">
@@ -58,7 +76,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

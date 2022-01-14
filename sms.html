@@ -15,37 +15,46 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> SMS </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Da du es eh unmöglich rechtzeitig zur Schule schaffst und den Tag auf keinen Fall zu Hause verbringen
-                    willst, gehst du in die Stadt.
-                </p>
-                <p>Leider hast du immer noch kein Geld, um dich wenigstens in ein Café zu setzten, also verbringst du
-                    den Vormittag mit Schaufensterbummel. Danach gehst du in den Park. Du setzt dich auf eine Bank,
-                    gönnst dir dein Pausenbrot und holst dein Mathebuch aus dem Rucksack. Für heute willst du dir noch
-                    eine Krankenmeldung besorgen. In der nächsten Stunde kannst du dann die Arbeit nachschreiben. </p>
+                Da du es eh unmöglich rechtzeitig zur Schule schaffst und den Tag auf keinen Fall zu Hause verbringen
+                willst, gehst du in die Stadt.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Erst als du abends wieder zu Hause bist, schaust du das erste Mal auf dein Handy. Da ist eine
-                    Nachricht von Jay.</p>
+                Leider hast du immer noch kein Geld, um dich wenigstens in ein Café zu setzten, also verbringst du den
+                Vormittag mit Schaufensterbummel. Danach gehst du in den Park. Du setzt dich auf eine Bank, gönnst dir
+                dein Pausenbrot und holst dein Mathebuch aus dem Rucksack. Für heute willst du dir noch eine
+                Krankenmeldung besorgen. In der nächsten Stunde kannst du dann die Arbeit nachschreiben.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Erst als du abends wieder zu Hause bist, schaust du das erste Mal auf dein Handy. Da ist eine Nachricht
+                von Jay.
             </div>
         </div>
         <div class="box message">
@@ -59,10 +68,10 @@
         </div>
         <div class="box story">
             <div class="content">
-                <p>Obwohl ja gestern so ziemlich alles schief gelaufen ist, willst du mit. Doch lohnt es sich, für das
-                    illegale Sprayen so viel aufs Spiel zu setzen? Nur weil es illegal ist, ist es nicht gleich
-                    schlecht. Ihr tut es schließlich zu einem Zweck und wollt damit etwas erreichen – das Thema Umwelt
-                    ins Bewusstsein der Gesellschaft rücken.</p>
+                Obwohl ja gestern so ziemlich alles schief gelaufen ist, willst du mit. Doch lohnt es sich, für das
+                illegale Sprayen so viel aufs Spiel zu setzen? Nur weil es illegal ist, ist es nicht gleich schlecht.
+                Ihr tut es schließlich zu einem Zweck und wollt damit etwas erreichen – das Thema Umwelt ins Bewusstsein
+                der Gesellschaft rücken.
             </div>
         </div>
         <div class="box decision">
@@ -82,7 +91,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

@@ -15,45 +15,63 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Deal </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>So schwer es dir auch fällt, aber du entscheidest dich für dich und deine Mutter.
-                </p>
-                <p>Schließlich ist sie deine Familie und Jay hat dich der Gefahr ausgesetzt und du sitzt seinetwegen in
-                    der Klemme. Sie haben dich im Stich gelassen!
-                </p>
-                <p>Du nimmst den Deal an und Officer Stein füllt die Dokumente aus. Du entgehst einer Strafanzeige,
-                    sowie Schadensersatzansprüchen.
-                </p>
-                <p>Dafür hast du deinen besten Freund verraten.</p>
+                So schwer es dir auch fällt, aber du entscheidest dich für dich und deine Mutter.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Nachdem alles Nötige getan ist, wirst du entlassen.
-                </p>
-                <p>Ein ungutes Gefühl verfolgt dich, doch so entkommst du den rechtlichen und finanziellen Konsequenzen
-                    eines verbotenen Hobbies. Du hattest keine Ahnung, dass du letztendlich bis zum 46. Lebensjahr für
-                    den verursachten Schaden hättest aufkommen müssen. Den von der gesamten Crew verursachten Schaden,
-                    wohlgemerkt! Egal wie du dich entschieden hättest, es wäre so oder so schlecht ausgegangen, doch so
-                    bist du gerade noch mit einem blauen Auge davongekommen. 40 Sozialstunden musst du abarbeiten, doch
-                    das ist ein fairer Deal gewesen... oder?</p>
+                Schließlich ist sie deine Familie und Jay hat dich der Gefahr ausgesetzt und du sitzt seinetwegen in der
+                Klemme. Sie haben dich im Stich gelassen!
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du nimmst den Deal an und Officer Stein füllt die Dokumente aus. Du entgehst einer Strafanzeige, sowie
+                Schadensersatzansprüchen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Dafür hast du deinen besten Freund verraten.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Nachdem alles Nötige getan ist, wirst du entlassen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Ein ungutes Gefühl verfolgt dich, doch so entkommst du den rechtlichen und finanziellen Konsequenzen
+                eines verbotenen Hobbies. Du hattest keine Ahnung, dass du letztendlich bis zum 46. Lebensjahr für den
+                verursachten Schaden hättest aufkommen müssen. Den von der gesamten Crew verursachten Schaden,
+                wohlgemerkt! Egal wie du dich entschieden hättest, es wäre so oder so schlecht ausgegangen, doch so bist
+                du gerade noch mit einem blauen Auge davongekommen. 40 Sozialstunden musst du abarbeiten, doch das ist
+                ein fairer Deal gewesen... oder?
             </div>
         </div>
         <div class="box decision">
@@ -65,7 +83,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

@@ -15,54 +15,81 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Die Crew </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Deine Schritte hallen durchs ausgeleuchtete Bahnhofsgebäude. Noch ist weit und breit kein Mensch zu
-                    sehen. Trotzdem befürchtest du, die Nachtwächter könnten auf dich aufmerksam werden. Um diese
-                    Uhrzeit hier unterwegs zu sein, ist eigentlich nicht weiter ungewöhnlich. Es ist dein schwarzes
-                    Outfit, das Misstrauen wecken könnte, sollte dir doch jemand begegnen. Du hast die Kapuze weit übers
-                    Gesicht gezogen, um es den Überwachungskameras nicht preiszugeben. Immer wieder musst du dich
-                    umdrehen und dich vergewissern, dass du nicht verfolgt wirst.</p>
+                Deine Schritte hallen durchs ausgeleuchtete Bahnhofsgebäude. Noch ist weit und breit kein Mensch zu
+                sehen. Trotzdem befürchtest du, die Nachtwächter könnten auf dich aufmerksam werden. Um diese Uhrzeit
+                hier unterwegs zu sein, ist eigentlich nicht weiter ungewöhnlich. Es ist dein schwarzes Outfit, das
+                Misstrauen wecken könnte, sollte dir doch jemand begegnen. Du hast die Kapuze weit übers Gesicht
+                gezogen, um es den Überwachungskameras nicht preiszugeben. Immer wieder musst du dich umdrehen und dich
+                vergewissern, dass du nicht verfolgt wirst.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Am Ende schaffst du es durch die Unterführung und übers Gleis zum Treffpunkt. Du fühlst dich sicher.
-                </p>
-                <p>Doch Jay und zwei seiner Freunde empfangen dich mit enttäuschten Blicken.
-                </p>
-                <p>„Alter! Ich hab’ dir gesagt, du sollst den Schleichweg nehmen! Wenn die Security hier aufkreuzt,
-                    wissen wir ja, wem wir’s zu verdanken haben!“
-                </p>
-                <p>Du verteidigst dich: „Chill mal. Mich hat ganz sicher keiner gesehen.“
-                </p>
-                <p>„Schon gut“, brummt Jay und zückt sein Handy. „Ich schreib Luca, dass er zurückkommen soll. Der
-                    sollte dich eigentlich abfangen.“
-                </p>
-                <p>„Ich wusste gar nicht, dass du mit einer Crew arbeitest.“
-                </p>
-                <p>„Wir sind ’ne Familie, klar? Das hier sind Flo und Basti. Wenn du auch dazu gehören willst, müssen
-                    wir dir vertrauen können. Du hast nicht auf mich gehört, jetzt musst du dich beweisen...“
-                </p>
-                <p>Jay drückt dir eine Dose in die Hand und trägt dir auf, eine Wand im ausgeleuchteten Teil des
-                    Bahnhofs mit deinem Namen zu markieren, ohne dich von der Nachtwache erwischen zu lassen oder die
-                    Crew zu verraten. Von deinem Graffiti-Tag sollst du ein Beweisfoto knipsen.</p>
+                Am Ende schaffst du es durch die Unterführung und übers Gleis zum Treffpunkt. Du fühlst dich sicher.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Doch Jay und zwei seiner Freunde empfangen dich mit enttäuschten Blicken.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Alter! Ich hab’ dir gesagt, du sollst den Schleichweg nehmen! Wenn die Security hier aufkreuzt, wissen
+                wir ja, wem wir’s zu verdanken haben!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du verteidigst dich: „Chill mal. Mich hat ganz sicher keiner gesehen.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Schon gut“, brummt Jay und zückt sein Handy. „Ich schreib Luca, dass er zurückkommen soll. Der sollte
+                dich eigentlich abfangen.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Ich wusste gar nicht, dass du mit einer Crew arbeitest.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Wir sind ’ne Familie, klar? Das hier sind Flo und Basti. Wenn du auch dazu gehören willst, müssen wir
+                dir vertrauen können. Du hast nicht auf mich gehört, jetzt musst du dich beweisen...“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Jay drückt dir eine Dose in die Hand und trägt dir auf, eine Wand im ausgeleuchteten Teil des Bahnhofs
+                mit deinem Namen zu markieren, ohne dich von der Nachtwache erwischen zu lassen oder die Crew zu
+                verraten. Von deinem Graffiti-Tag sollst du ein Beweisfoto knipsen.
             </div>
         </div>
         <div class="box decision">
@@ -82,7 +109,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

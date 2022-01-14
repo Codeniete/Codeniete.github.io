@@ -64,6 +64,7 @@ a:hover {
   /* story-layer verstecken */
   margin-top: 100%;
   /* animation style transition */
+  -webkit-transition: margin-top 1s ease-in-out;
   transition: margin-top 1s ease-in-out;
 }
 
@@ -79,6 +80,7 @@ h1 {
   opacity: 0;
   padding-bottom: 10px;
   /* animation style transition */
+  -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
@@ -111,14 +113,11 @@ h1 {
   margin-right: auto;
   background-color: white;
 }
-.box.story > .content > p, .box.message > .content > p {
+.box.message > .content > p {
   margin: 0;
 }
 .box.message > .content {
   font-weight: bold;
-}
-.box.story > .content p+p {
-  text-indent: 10px;
 }
 
 .box.decision {

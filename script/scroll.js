@@ -24,7 +24,7 @@ window.scrollTo(0, 0);
 /* Events */
 
 document.addEventListener("scroll", function () {
-   const newScrollIndex = Math.floor(window.scrollY / 1000);
+   const newScrollIndex = Math.round(window.scrollY / 1000);
    if(newScrollIndex !== lastScrollIndex) {
        lastScrollIndex = newScrollIndex;
        updateStoryLayer(lastScrollIndex);
@@ -53,7 +53,7 @@ function calculateBounds() {
     for (let i = 0; i < numberOfBoxes; i++) {
         const boxContent = boxes[i].querySelector(".content");
         if (boxContent !== null) {
-            boxContent.style.maxHeight = (referenceHeight - padding) + "px";
+            boxContent.style.maxHeight = (newReferenceHeight - padding - 15) + "px";
         }
         let distance = lastDistance + boxes[i].getBoundingClientRect().height;
         lastDistance = distance;

@@ -15,68 +15,98 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Luca </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Du fühlst dich schlecht, als du Jay abgesagt hast. Schließlich hat dir die Aktion Spaß gemacht und es
-                    war unglaublich aufregend, doch du musst dich auf die Schule konzentrieren.
-                </p>
-                <p>Also legst du das Handy weg und lernst weiter für die Mathearbeit.</p>
+                Du fühlst dich schlecht, als du Jay abgesagt hast. Schließlich hat dir die Aktion Spaß gemacht und es
+                war unglaublich aufregend, doch du musst dich auf die Schule konzentrieren.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Zwei Stunden sind vergangen und nun bist du beim Arzt, der dir die Krankmeldung ausstellen soll. So
-                    weit, so gut, er gibt dir was du brauchst, da du doch ein guter Schauspieler sein kannst und von
-                    Magenkrämpfen geklagt hast. Mit einem Rezept und dem gelben Zettel lässt er dich gehen.</p>
+                Also legst du das Handy weg und lernst weiter für die Mathearbeit.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Als du aus der Praxis rauskommst, bemerkst du nicht die Person, die um die Ecke kommt und ihr stoßt
-                    zusammen.
-                </p>
-                <p>Der Junge spricht dich an: „Hey, dich kenn ich doch! Erinnerst du dich an mich? Ich bin der, vor dem
-                    du gestern weggerannt bist.“
-                </p>
-                <p>Er lacht und du lachst ebenfalls, nur viel schüchterner.
-                </p>
-                <p>Luca erzählt weiter: „Mega geile Aktion gestern, du hast echt was verpasst! Morgen Abend treffen wir
-                    uns wieder und es wird richtig heavy! Es wird ein nagelneuer ICE hingestellt, der am nächsten Tag
-                    nach München fährt. Du musst auf jeden Fall dabei sein. Je mehr Leute wir sind, umso schneller ist
-                    das Ding fertig.“
-                </p>
-                <p>Du bist etwas benommen und weißt nicht wie du dich entscheiden sollst. Eigentlich wolltest du für die
-                    Schule lernen. Jetzt hast du wenigstens den Schein für heute, das nächste Mal musst du dich
-                    zusammenreißen. Andererseits ist die Aktion schon von großer Bedeutung. Wenn du nicht dabei bist,
-                    ist das Risiko, erwischt zu werden, für die Anderen höher, da sie ohne dich länger brauchen werden.
-                </p>
-                <p>Luca boxt dir freundschaftlich an die Schulter und sagt: „Komm schon, du willst doch Teil der Crew
-                    sein, oder?“
-                </p>
-                <p>Aber du winkst ab: „Nee, ich kann das wirklich nicht. Ich muss mich auf die Schule konzentrieren,
-                    dann ist da noch meine Mutter...”
-                </p>
-                <p>„Ok, bis morgen kannst du dich doch um deine Mutter kümmern. Und sieh es als Teil deiner
-                    Aufnahmeprüfung an. Nur noch Morgen und dann machen wir eh ’ne Pause, weil Jay auch für die
-                    Abschlussprüfungen lernen muss. Schule geht meistens vor, schließlich baust du dir eine Zukunft auf.
-                    Aber du darfst auch ein wenig Spaß haben. Und nach der Aktion bist du voller Adrenalin und Stolz, da
-                    ist der Lerneffekt viel intensiver, ich versprech’s dir!”</p>
+                Zwei Stunden sind vergangen und nun bist du beim Arzt, der dir die Krankmeldung ausstellen soll. So
+                weit, so gut, er gibt dir was du brauchst, da du doch ein guter Schauspieler sein kannst und von
+                Magenkrämpfen geklagt hast. Mit einem Rezept und dem gelben Zettel lässt er dich gehen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Als du aus der Praxis rauskommst, bemerkst du nicht die Person, die um die Ecke kommt und ihr stoßt
+                zusammen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Der Junge spricht dich an: „Hey, dich kenn ich doch! Erinnerst du dich an mich? Ich bin der, vor dem du
+                gestern weggerannt bist.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Er lacht und du lachst ebenfalls, nur viel schüchterner.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Luca erzählt weiter: „Mega geile Aktion gestern, du hast echt was verpasst! Morgen Abend treffen wir uns
+                wieder und es wird richtig heavy! Es wird ein nagelneuer ICE hingestellt, der am nächsten Tag nach
+                München fährt. Du musst auf jeden Fall dabei sein. Je mehr Leute wir sind, umso schneller ist das Ding
+                fertig.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du bist etwas benommen und weißt nicht wie du dich entscheiden sollst. Eigentlich wolltest du für die
+                Schule lernen. Jetzt hast du wenigstens den Schein für heute, das nächste Mal musst du dich
+                zusammenreißen. Andererseits ist die Aktion schon von großer Bedeutung. Wenn du nicht dabei bist, ist
+                das Risiko, erwischt zu werden, für die Anderen höher, da sie ohne dich länger brauchen werden.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Luca boxt dir freundschaftlich an die Schulter und sagt: „Komm schon, du willst doch Teil der Crew sein,
+                oder?“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Aber du winkst ab: „Nee, ich kann das wirklich nicht. Ich muss mich auf die Schule konzentrieren, dann
+                ist da noch meine Mutter...”
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Ok, bis morgen kannst du dich doch um deine Mutter kümmern. Und sieh es als Teil deiner Aufnahmeprüfung
+                an. Nur noch Morgen und dann machen wir eh ’ne Pause, weil Jay auch für die Abschlussprüfungen lernen
+                muss. Schule geht meistens vor, schließlich baust du dir eine Zukunft auf. Aber du darfst auch ein wenig
+                Spaß haben. Und nach der Aktion bist du voller Adrenalin und Stolz, da ist der Lerneffekt viel
+                intensiver, ich versprech’s dir!”
             </div>
         </div>
         <div class="box decision">
@@ -95,7 +125,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>

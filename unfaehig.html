@@ -15,52 +15,76 @@
 <header>
     <div class="header-side" id="header-left">
         <div class="header-help">
-            <button class="help-button">?</button>
+            <!-- Help-Button -->
+            <button class="help-button" id="help-button">?</button>
         </div>
     </div>
     <div class="header-middle">
         <div class="logo">
-            <img src="img/logo-middle.png" alt="YourPath">
+            <a href="index.html">
+                <img src="img/logo-middle.png" alt="YourPath">
+            </a>
         </div>
     </div>
     <div class="header-side" id="header-right"></div>
 </header>
 
 <main id="scroll-body">
+    <!-- Referenzebene für den verfügbaren Platz -->
+    <div class="container" id="reference-layer"></div>
+    <!-- Storyebene mit den Boxen -->
     <div class="container" id="story-layer">
         <div class="box title">
             <h1> Unfähig </h1>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Am nächsten Morgen stehst du gut erholt auf. Du springst noch schnell unter die Dusche, um einen
-                    klaren Kopf vor der Klausur zu bekommen. Nachdem du dich fertig gemacht hast, willst du frühstücken
-                    und hoffst, dass deine Mutter noch schläft. Im Flur hörst du, wie es in der Küche raschelt. Es ist
-                    deine Mutter, die etwas im Kühlschrank sucht.
-                </p>
-                <p>„Guten Morgen Mama.“
-                </p>
-                <p>Sie antwortet zornig: „Wo ist mein Wein?!“
-                </p>
-                <p>„Ich hatte kein Geld mehr und konnte deswegen keinen holen, weil ich an dein Portemonaie nicht
-                    rangehen soll.“
-                </p>
-                <p>Deine Mutter stellt sich vor dich, schaut dich böse an und gibt dir eine Ohrfeige. Das ist nicht das
-                    erste Mal, dass sie das tut.
-                </p>
-                <p>„Mein Gott, was kannst du denn überhaupt?“</p>
+                Am nächsten Morgen stehst du gut erholt auf. Du springst noch schnell unter die Dusche, um einen klaren
+                Kopf vor der Klausur zu bekommen. Nachdem du dich fertig gemacht hast, willst du frühstücken und hoffst,
+                dass deine Mutter noch schläft. Im Flur hörst du, wie es in der Küche raschelt. Es ist deine Mutter, die
+                etwas im Kühlschrank sucht.
             </div>
         </div>
         <div class="box story">
             <div class="content">
-                <p>Mit diesen Worten verlässt sie die Küche. Du hältst dir die Hand an die schmerzende Wange und öffnest
-                    mit der anderen den Kühlschrank. Du bemerkst, dass sich außer eine Scheibe Käse nichts mehr dort
-                    befindet. Aus dem Wohnzimmer hörst du deine Mutter weiter rumbrüllen.
-                </p>
-                <p>Du bist schon wieder viel zu spät dran, obwohl du dich bemüht hast, pünktlich zu sein... doch der
-                    Streit mit deiner Mutter lässt dir keine Ruhe. Du hältst die Situation zu Hause nicht mehr aus,
-                    schnappst dir deine Tasche und machst dich mit knurrendem Magen auf den Weg zur Schule. Nicht mal
-                    eine Busfahrkarte kannst du dir kaufen. Du bist gezwungen, zu laufen.</p>
+                „Guten Morgen Mama.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Sie antwortet zornig: „Wo ist mein Wein?!“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Ich hatte kein Geld mehr und konnte deswegen keinen holen, weil ich an dein Portemonaie nicht rangehen
+                soll.“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Deine Mutter stellt sich vor dich, schaut dich böse an und gibt dir eine Ohrfeige. Das ist nicht das
+                erste Mal, dass sie das tut.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                „Mein Gott, was kannst du denn überhaupt?“
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Mit diesen Worten verlässt sie die Küche. Du hältst dir die Hand an die schmerzende Wange und öffnest
+                mit der anderen den Kühlschrank. Du bemerkst, dass sich außer eine Scheibe Käse nichts mehr dort
+                befindet. Aus dem Wohnzimmer hörst du deine Mutter weiter rumbrüllen.
+            </div>
+        </div>
+        <div class="box story">
+            <div class="content">
+                Du bist schon wieder viel zu spät dran, obwohl du dich bemüht hast, pünktlich zu sein... doch der Streit
+                mit deiner Mutter lässt dir keine Ruhe. Du hältst die Situation zu Hause nicht mehr aus, schnappst dir
+                deine Tasche und machst dich mit knurrendem Magen auf den Weg zur Schule. Nicht mal eine Busfahrkarte
+                kannst du dir kaufen. Du bist gezwungen, zu laufen.
             </div>
         </div>
         <div class="box decision">
@@ -72,7 +96,29 @@
     </div>
 </main>
 
+<!-- Dialog, der mit dem Help-Button aufgerufen wird -->
+<div class="dialog-main">
+    <div class="dialog-inner">
+        <div class="close-button">x</div>
+        <div class="dialog-wrapper">
+            <div class="dialog-content">
+                <p><b>Scrolle</b>, um die Geschichte Stück für Stück zu lesen.<br/>
+                    Erscheint am rechten Rand der Box eine <b>Scrollbar</b>, scrolle innerhalb der Box.<br/>
+                    <b>Graue Boxen</b> bieten dir die Möglichkeit, per Klick zwischen zwei Entscheidungen zu
+                    wählen.<br/>
+                    Gibt es keine Entscheidungsmöglichkeit, klicke auf „Weiterlesen...“
+                </p>
+                <p>Mit einem Klick auf das <b>Logo oben</b> kommst du zurück zur Startseite.</p>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
+
 <footer></footer>
+
 <script src="script/help_dialog.js" charset="utf-8"></script>
+<script src="script/scroll.js" charset="utf-8"></script>
+
 </body>
 </html>
